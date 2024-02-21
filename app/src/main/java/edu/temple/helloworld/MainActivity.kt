@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         
         findViewById<Button>(R.id.clickMeButton).setOnClickListener {
             if(nameEditText.text.isEmpty()) {
-                nameEditText.setError("Name not entered")
+                nameEditText.text = "Name not entered"
             } else {
                 displayTextView.text = "Hello, ${findViewById<EditText>(R.id.nameEditText).text}"
             }
